@@ -1,0 +1,25 @@
+# Dependencies
+**/node_modules/
+
+# Environment files and secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Uploaded brochures and runtime files
+backend/uploads/
+
+# Build outputs
+**/build/
+**/dist/
+**/coverage/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local Git metadata backups
+**/.git-backup/

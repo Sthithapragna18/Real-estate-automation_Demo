@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2563eb, #0f172a);
+    min-height: 100vh;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.hero-card {
+    width: 100%;
+    max-width: 850px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    border-radius: 24px;
+    padding: 45px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .25);
+}
+
+.logo {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.hero-card h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #dbeafe;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.upload-area {
+
+    border: 2px dashed rgba(255, 255, 255, .4);
+
+    border-radius: 18px;
+
+    padding: 40px;
+
+    transition: .3s;
+
+}
+
+.upload-area:hover {
+
+    background: rgba(255, 255, 255, .08);
+
+    transform: translateY(-4px);
+
+}
+
+.upload-icon {
+
+    font-size: 60px;
+
+    margin-bottom: 15px;
+
+}
+
+.upload-area h2 {
+
+    margin-bottom: 15px;
+
+}
+
+.upload-area p {
+
+    color: #dbeafe;
+
+    margin-bottom: 15px;
+
+}
+
+.upload-btn {
+
+    padding: 15px 40px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background: white;
+
+    color: #2563eb;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+}
+
+.upload-btn:hover {
+
+    transform: scale(1.05);
+
+}
+
+.support {
+
+    display: block;
+
+    margin-top: 18px;
+
+    color: #dbeafe;
+
+}
+
+.features {
+
+    margin-top: 35px;
+
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+.feature {
+
+    background: rgba(255, 255, 255, .08);
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    min-width: 180px;
+
+    font-weight: 600;
+
+}
+
+/* ================= RESULT CARD ================= */
+
+.result-card {
+
+    margin-top: 35px;
+
+    background: white;
+
+    color: #1e293b;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    text-align: left;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+
+}
+
+.result-card h2 {
+
+    text-align: center;
+
+    color: #2563eb;
+
+    margin-bottom: 25px;
+
+}
+
+.field {
+
+    margin-bottom: 20px;
+
+}
+
+.field label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #334155;
+
+}
+
+.field input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: 1px solid #d1d5db;
+
+    font-size: 15px;
+
+}
+
+.chips {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+.chip {
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+}
+
+.save-btn {
+
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #10b981;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.save-btn:hover {
+
+    background: #059669;
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px) {
+
+    .hero-card {
+
+        padding: 25px;
+
+    }
+
+    .hero-card h1 {
+
+        font-size: 34px;
+
+    }
+
+    .features {
+
+        flex-direction: column;
+
+    }
+
+    .feature {
+
+        width: 100%;
+
+    }
+
+}
+
+.info-card {
+
+    background: #f8fafc;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    margin-bottom: 18px;
+
+    border-left: 5px solid #2563eb;
+
+}
+
+.title {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    color: #2563eb;
+
+    font-size: 15px;
+
+}
+
+.info-card p {
+
+    font-size: 16px;
+
+    color: #334155;
+
+    line-height: 1.6;
+
+}
+
+.green {
+
+    background: #10b981 !important;
+
+}
+
+.orange {
+
+    background: #f59e0b !important;
+
+}
+
+/* ================= PROCESSING ================= */
+
+.processing-card {
+
+    margin-top: 35px;
+
+    background: white;
+
+    color: #1e293b;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    text-align: center;
+
+}
+
+.spinner {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    border: 6px solid #dbeafe;
+
+    border-top: 6px solid #2563eb;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+
+}
+
+.processing-text {
+
+    margin: 20px 0;
+
+    font-size: 18px;
+
+    color: #2563eb;
+
+    font-weight: 600;
+
+}
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 10px;
+
+    background: #e2e8f0;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    margin: 25px 0;
+
+}
+
+.progress-fill {
+
+    width: 100%;
+
+    height: 100%;
+
+    background: linear-gradient(90deg, #2563eb, #10b981);
+
+    animation: loading 2s infinite;
+
+}
+
+@keyframes spin {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+@keyframes loading {
+
+    0% {
+
+        transform: translateX(-100%);
+
+    }
+
+    100% {
+
+        transform: translateX(100%);
+
+    }
+
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    margin-bottom: 35px;
+}
+
+.logo-circle {
+
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 38px;
+
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+
+    color: white;
+
+    box-shadow: 0 10px 30px rgba(37, 99, 235, .4);
+
+}
+
+.hero-card h1 {
+
+    font-size: 48px;
+    font-weight: 700;
+
+}
+
+.hero-card h1 span {
+
+    color: #60a5fa;
+
+}
+
+.status-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    padding: 10px 22px;
+
+    border-radius: 30px;
+
+    background: rgba(16, 185, 129, .15);
+
+    border: 1px solid rgba(16, 185, 129, .4);
+
+    color: #bbf7d0;
+
+    font-weight: 600;
+
+}
